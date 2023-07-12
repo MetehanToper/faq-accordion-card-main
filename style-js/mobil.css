@@ -1,0 +1,139 @@
+:root{
+    /* color */
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+
+    /* Background gradient: */
+
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+
+    --Font-size: 12px;
+    --Font-Fam:'Kumbh Sans', sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:linear-gradient( hsl(273, 75%, 66%),hsl(240, 73%, 65%)) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-family: var(--Font-Fam);
+}
+
+#main-card{
+    border: 1px solid #fff;
+    border-radius: 15px;
+    background-color: #fff;
+    width: 90%;
+    height: 50%;
+    margin: 180px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-total{
+    position: relative;
+ }
+ .image-box{
+     position: absolute;
+     top: -55px;
+     width: 120px;
+     z-index:1111;
+ }
+ .image-woman{
+    width: 320px;
+     position: relative;
+     top:-150px;
+     background-image: url(../images/bg-pattern-desktop.svg);
+     background-repeat: no-repeat;
+     background-position:left;
+     background-size:cover;
+   
+ }
+
+ .main-text{
+    padding: 20px;
+    margin-top: -90px;
+    text-align: center;
+}
+.main-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+.main-question{
+    margin-top: -20px;
+}
+
+
+
+.question{
+    display: flex;
+    justify-content: space-between; 
+    gap: 30px;
+    border-bottom: 1px solid var(--Dark-grayish-blue);
+    padding: 10px;
+    color: var(--Very-dark-desaturated-blue);
+}
+.btn-quest{
+    background-color: #fff;
+    border: 1px solid #fff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.btn-quest:hover{
+    cursor: pointer;
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+}
+.btn-quest:focus{
+    color: var(--Soft-red);
+}
+.question img {
+    width: 15px;
+    height: 10px;
+    text-align: center;
+    align-self: center;
+}
+.btn-arrow{
+    background-color:#fff;
+    border: 1px solid #fff;
+}
+
+.btn-arrow:hover{
+    cursor: pointer;
+}
+
+.answer{
+    padding: 5px;
+    font-size: .9rem;
+
+}
+
+.hidden{
+    display: none;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+   }
+.attribution a { 
+   color: hsl(228, 45%, 44%);
+}
